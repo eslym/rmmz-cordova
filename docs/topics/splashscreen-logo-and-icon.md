@@ -4,5 +4,5 @@
 
 _(仍在撰写中，请耐心等待)_
 
-> 此页内容如果真的很急需可以先参考[此范例](https://github.com/eslym/rmmz-cordova/example)。
+> 此页内容如果真的很急需可以先参考[此范例](https://github.com/eslym/rmmz-cordova/tree/main/example)。
 {style="note"}
