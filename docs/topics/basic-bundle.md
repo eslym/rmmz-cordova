@@ -38,8 +38,7 @@ D:\projects\my-game
 
 ### 1.1. 部署游戏档案 {id="deploy-game-files"}
 
-之后再把 RM 游戏[部署](https://rpgmakerofficial.com/product/MZ_help-en/#t=01_11_03.html) (`文件` → `部署`)
-到项目文件夹下的 `www` 文件夹内。
+之后再把 RM 游戏[部署](https://rpgmakerofficial.com/product/MZ_help-en/#t=01_11_03.html) (`文件` → `部署`) 到项目文件夹下的 `www` 文件夹内。
 
 ![部署](deploy-rmmz.png)
 
@@ -52,7 +51,7 @@ D:\projects\my-game
 一个新的 Cordova 项目并不会自动配置 App 名称与 ID，因此需要手动更改。首先用文本编辑器打开 `config.yml`，然后按自己的需求更改`<widget>`
 的 `id`，`name`，`description` 与 `author`，`id` 的格式通常为 `域名.项目名` 如：`com.example.project1`。
 
-Cordova 打包的 App 默认配置并非全屏并且竖屏，并不适合用作游戏，因此需要再 `</widget>` 前添加以下两行更改这些设定。
+Cordova 打包的 App 默认配置并非全屏并且竖屏，并不适合用作游戏，因此需要在 `</widget>` 前添加以下两行更改这些设定。
 
 ```xml
 <widget id="...">
@@ -115,6 +114,13 @@ Android project created with cordova-android@12.0.1
 
 ![生成测试用APK安装包](build-debug-apk.png)
 
+> 在通知窗口中点击打包完成的通知中的 `locate` 可以直接打开安装包所在的文件夹
+>
+> ![通知窗口](build-apk-locate.png)
+
+> **注意：** 此安装包仅能用作测试用途，请勿将其当做正式版发表。
+{style="warning"}
+
 
 ## 常见问题 {id="faq"}
 ### 在未安装所需的SDK版本前就打开了项目而导致报错 {id="faq-missing-sdk"}
@@ -134,12 +140,6 @@ No installed build tools found. Please install the Android build tools version 3
 
 ![Reload Gradle Project](reload-gradle-project.png)
 
-> 在通知窗口中点击打包完成的通知中的 `locate` 可以直接打开安装包所在的文件夹
-> 
-> ![通知窗口](build-apk-locate.png)
-
-> **注意：** 此安装包仅能用作测试用途，请勿将其当做正式版发表。
-{style="warning"}
 
 ### 音频或视频文件无法播放 {id="faq-audio-cant-play"}
 
