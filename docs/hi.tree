@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="RM游戏打包APK教程"
+                 start-page="bundle-rpgmaker-game.md">
+
+    <toc-element topic="bundle-rpgmaker-game.md">
+        <toc-element topic="basic-bundle.md"/>
+        <toc-element topic="splashscreen-logo-and-icon.md"/>
+        <toc-element topic="build-release-and-publish.md"/>
+    </toc-element>
+</instance-profile>

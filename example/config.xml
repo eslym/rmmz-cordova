@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.rmmz.project1" version="1.0.0" defaultLocale="zh-CN" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Project1</name>
+    <description>A RPG Maker MZ Project</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="landscape" />
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="merge">
+            <activity android:screenOrientation="sensorLandscape" />
+        </edit-config>
+
+        <!--
+            游戏图标
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
+        <icon src="res/android/icon/android-launchericon-48-48.png" density="mdpi" />
+        <icon src="res/android/icon/android-launchericon-72-72.png" density="hdpi" />
+        <icon src="res/android/icon/android-launchericon-96-96.png" density="xhdpi" />
+        <icon src="res/android/icon/android-launchericon-144-144.png" density="xxhdpi" />
+        <icon src="res/android/icon/android-launchericon-192-192.png" density="xxxhdpi" />
+
+        <!-- 启动画面 Logo -->
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/android/rmmz.xml" />
+        <!-- 启动画面背景颜色 -->
+        <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+    </platform>
+</widget>
